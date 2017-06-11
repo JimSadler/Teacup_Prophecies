@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="-6" y="129"/>
         </scene>
-        <!--Dashboard View Controller-->
+        <!--Quotes View Controller-->
         <scene sceneID="rV9-7T-96O">
             <objects>
-                <viewController id="D3Y-Qe-HeW" customClass="DashboardViewController" customModule="Teacup_Prophecies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="D3Y-Qe-HeW" customClass="QuotesViewController" customModule="Teacup_Prophecies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PER-i4-TH3"/>
                         <viewControllerLayoutGuide type="bottom" id="HQ9-jv-GPb"/>
@@ -85,7 +85,19 @@
                     <view key="view" contentMode="scaleToFill" id="fE1-lz-3jF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wAm-bX-fTj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wAm-bX-fTj" firstAttribute="leading" secondItem="fE1-lz-3jF" secondAttribute="leading" id="G56-Jq-nvj"/>
+                            <constraint firstAttribute="trailing" secondItem="wAm-bX-fTj" secondAttribute="trailing" id="Md1-4R-dSH"/>
+                            <constraint firstItem="HQ9-jv-GPb" firstAttribute="top" secondItem="wAm-bX-fTj" secondAttribute="bottom" id="eIa-nf-Knk"/>
+                            <constraint firstItem="wAm-bX-fTj" firstAttribute="top" secondItem="PER-i4-TH3" secondAttribute="bottom" id="shY-SO-83C"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oXs-l4-43C">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="uBr-66-zts">
@@ -94,6 +106,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dashboardView" destination="wAm-bX-fTj" id="luq-s1-zhm"/>
+                        <outlet property="tableView" destination="wAm-bX-fTj" id="Gfo-8s-XaV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSj-nP-AMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
