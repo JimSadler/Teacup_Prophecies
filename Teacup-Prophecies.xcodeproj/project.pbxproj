@@ -15,6 +15,7 @@
 		36083D781EEDABC20036E770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36083D771EEDABC20036E770 /* Assets.xcassets */; };
 		36083D7B1EEDABC20036E770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36083D791EEDABC20036E770 /* LaunchScreen.storyboard */; };
 		36083D831EEDAC690036E770 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36083D821EEDAC680036E770 /* GoogleService-Info.plist */; };
+		36083D851EEDB6D80036E770 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36083D841EEDB6D80036E770 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		36083D7A1EEDABC20036E770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36083D7C1EEDABC20036E770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36083D821EEDAC680036E770 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		36083D841EEDB6D80036E770 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teacup-Prophecies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies.release.xcconfig"; sourceTree = "<group>"; };
 		A93DEF45B64D1766CDC95A90 /* Pods_Teacup_Prophecies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teacup_Prophecies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 			children = (
 				36083D6D1EEDABC20036E770 /* AppDelegate.swift */,
 				36083D6F1EEDABC20036E770 /* SignInViewController.swift */,
+				36083D841EEDB6D80036E770 /* DashboardViewController.swift */,
 				36083D711EEDABC20036E770 /* Main.storyboard */,
 				36083D771EEDABC20036E770 /* Assets.xcassets */,
 				36083D791EEDABC20036E770 /* LaunchScreen.storyboard */,
@@ -220,6 +223,7 @@
 				36083D701EEDABC20036E770 /* SignInViewController.swift in Sources */,
 				36083D761EEDABC20036E770 /* Teacup_Prophecies.xcdatamodeld in Sources */,
 				36083D6E1EEDABC20036E770 /* AppDelegate.swift in Sources */,
+				36083D851EEDB6D80036E770 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
