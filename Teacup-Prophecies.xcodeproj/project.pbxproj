@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ABA7786C9A382D30293B9A8 /* Pods_Teacup_Prophecies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93DEF45B64D1766CDC95A90 /* Pods_Teacup_Prophecies.framework */; };
 		36083D6E1EEDABC20036E770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36083D6D1EEDABC20036E770 /* AppDelegate.swift */; };
-		36083D701EEDABC20036E770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36083D6F1EEDABC20036E770 /* ViewController.swift */; };
+		36083D701EEDABC20036E770 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36083D6F1EEDABC20036E770 /* SignInViewController.swift */; };
 		36083D731EEDABC20036E770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36083D711EEDABC20036E770 /* Main.storyboard */; };
 		36083D761EEDABC20036E770 /* Teacup_Prophecies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36083D741EEDABC20036E770 /* Teacup_Prophecies.xcdatamodeld */; };
 		36083D781EEDABC20036E770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36083D771EEDABC20036E770 /* Assets.xcassets */; };
 		36083D7B1EEDABC20036E770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36083D791EEDABC20036E770 /* LaunchScreen.storyboard */; };
+		36083D831EEDAC690036E770 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36083D821EEDAC680036E770 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08035266F5349A492235464B /* Pods-Teacup-Prophecies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teacup-Prophecies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies.debug.xcconfig"; sourceTree = "<group>"; };
 		36083D6A1EEDABC20036E770 /* Teacup-Prophecies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teacup-Prophecies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36083D6D1EEDABC20036E770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36083D6F1EEDABC20036E770 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36083D6F1EEDABC20036E770 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		36083D721EEDABC20036E770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36083D751EEDABC20036E770 /* Teacup_Prophecies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Teacup_Prophecies.xcdatamodel; sourceTree = "<group>"; };
 		36083D771EEDABC20036E770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36083D7A1EEDABC20036E770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36083D7C1EEDABC20036E770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36083D821EEDAC680036E770 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teacup-Prophecies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies.release.xcconfig"; sourceTree = "<group>"; };
+		A93DEF45B64D1766CDC95A90 /* Pods_Teacup_Prophecies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teacup_Prophecies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABA7786C9A382D30293B9A8 /* Pods_Teacup_Prophecies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BB0A7BECF18FA907B05B2AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08035266F5349A492235464B /* Pods-Teacup-Prophecies.debug.xcconfig */,
+				49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		36083D611EEDABC20036E770 = {
 			isa = PBXGroup;
 			children = (
 				36083D6C1EEDABC20036E770 /* Teacup-Prophecies */,
 				36083D6B1EEDABC20036E770 /* Products */,
+				1BB0A7BECF18FA907B05B2AA /* Pods */,
+				E98EB09FE38CA6FEEADA14B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +75,23 @@
 			isa = PBXGroup;
 			children = (
 				36083D6D1EEDABC20036E770 /* AppDelegate.swift */,
-				36083D6F1EEDABC20036E770 /* ViewController.swift */,
+				36083D6F1EEDABC20036E770 /* SignInViewController.swift */,
 				36083D711EEDABC20036E770 /* Main.storyboard */,
 				36083D771EEDABC20036E770 /* Assets.xcassets */,
 				36083D791EEDABC20036E770 /* LaunchScreen.storyboard */,
 				36083D7C1EEDABC20036E770 /* Info.plist */,
+				36083D821EEDAC680036E770 /* GoogleService-Info.plist */,
 				36083D741EEDABC20036E770 /* Teacup_Prophecies.xcdatamodeld */,
 			);
 			path = "Teacup-Prophecies";
+			sourceTree = "<group>";
+		};
+		E98EB09FE38CA6FEEADA14B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A93DEF45B64D1766CDC95A90 /* Pods_Teacup_Prophecies.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36083D7F1EEDABC20036E770 /* Build configuration list for PBXNativeTarget "Teacup-Prophecies" */;
 			buildPhases = (
+				7B3565B60B4D414BABA6133D /* [CP] Check Pods Manifest.lock */,
 				36083D661EEDABC20036E770 /* Sources */,
 				36083D671EEDABC20036E770 /* Frameworks */,
 				36083D681EEDABC20036E770 /* Resources */,
+				208AE311F2D6B9221C64538E /* [CP] Embed Pods Frameworks */,
+				EA294041F92207E987425BF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36083D7B1EEDABC20036E770 /* LaunchScreen.storyboard in Resources */,
+				36083D831EEDAC690036E770 /* GoogleService-Info.plist in Resources */,
 				36083D781EEDABC20036E770 /* Assets.xcassets in Resources */,
 				36083D731EEDABC20036E770 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +164,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		208AE311F2D6B9221C64538E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B3565B60B4D414BABA6133D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA294041F92207E987425BF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36083D661EEDABC20036E770 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36083D701EEDABC20036E770 /* ViewController.swift in Sources */,
+				36083D701EEDABC20036E770 /* SignInViewController.swift in Sources */,
 				36083D761EEDABC20036E770 /* Teacup_Prophecies.xcdatamodeld in Sources */,
 				36083D6E1EEDABC20036E770 /* AppDelegate.swift in Sources */,
 			);
@@ -271,6 +350,7 @@
 		};
 		36083D801EEDABC20036E770 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08035266F5349A492235464B /* Pods-Teacup-Prophecies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S2HT9D8CTZ;
@@ -285,6 +365,7 @@
 		};
 		36083D811EEDABC20036E770 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S2HT9D8CTZ;
@@ -316,6 +397,7 @@
 				36083D811EEDABC20036E770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
