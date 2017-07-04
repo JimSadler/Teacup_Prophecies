@@ -107,7 +107,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dashboardView" destination="wAm-bX-fTj" id="luq-s1-zhm"/>
                         <outlet property="tableView" destination="wAm-bX-fTj" id="Gfo-8s-XaV"/>
                     </connections>
                 </viewController>
