@@ -78,11 +78,10 @@
 		36083D6C1EEDABC20036E770 /* Teacup-Prophecies */ = {
 			isa = PBXGroup;
 			children = (
+				367118FB1F12864F00224916 /* Models */,
+				367118FA1F12862700224916 /* ViewControllers */,
 				36083D6D1EEDABC20036E770 /* AppDelegate.swift */,
-				36083D6F1EEDABC20036E770 /* SignInViewController.swift */,
-				36083D8A1EEE042D0036E770 /* QuotesViewController.swift */,
 				36083D711EEDABC20036E770 /* Main.storyboard */,
-				36CEC88A1F0BF50C00D13EDE /* Quotes.swift */,
 				36083D771EEDABC20036E770 /* Assets.xcassets */,
 				36083D791EEDABC20036E770 /* LaunchScreen.storyboard */,
 				36083D7C1EEDABC20036E770 /* Info.plist */,
@@ -90,6 +89,23 @@
 				36083D741EEDABC20036E770 /* Teacup_Prophecies.xcdatamodeld */,
 			);
 			path = "Teacup-Prophecies";
+			sourceTree = "<group>";
+		};
+		367118FA1F12862700224916 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36083D6F1EEDABC20036E770 /* SignInViewController.swift */,
+				36083D8A1EEE042D0036E770 /* QuotesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		367118FB1F12864F00224916 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36CEC88A1F0BF50C00D13EDE /* Quotes.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E98EB09FE38CA6FEEADA14B5 /* Frameworks */ = {

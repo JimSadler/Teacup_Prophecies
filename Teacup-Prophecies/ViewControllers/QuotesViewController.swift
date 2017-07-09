@@ -20,13 +20,32 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
+        
+//        Database.database().reference().child("quotes/quote\(arc4random_uniform(386))").observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
+//            print(snapshot)
+//
+//
+//                    let quote = Quote()
+//                    quote.quote = (snapshot.value as!NSDictionary)["quote"] as! String
+//
+//        })
+        
         Database.database().reference().child("quotes").observe(DataEventType.childAdded, with: {(snapshot) in
             print(snapshot)
+            
+            let quote = Quote()
+            quote.quote = (snapshot.value! as! NSDictionary)["quote"] as! String
+            
+            self.quotes.append(quote)
+            self.tableView.reloadData()
         })
         
-        // Do any additional setup after loading the view.
+         //Do any additional setup after loading the view.
     }
     
+    @IBAction func logoutTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return quotes.count
     }
