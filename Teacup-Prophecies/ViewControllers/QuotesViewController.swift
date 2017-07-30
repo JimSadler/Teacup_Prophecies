@@ -52,8 +52,10 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        let quote = quotes[indexPath.row]
+        //let quote = quotes[indexPath.row]
+        let quote =  quotes[Int(arc4random_uniform(UInt32(quotes.count) ))]
         
+
         cell.textLabel?.text = quote.quote
         
         return cell
