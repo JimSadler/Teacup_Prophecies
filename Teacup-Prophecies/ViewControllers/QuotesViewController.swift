@@ -27,12 +27,11 @@ class QuotesViewController: UIViewController {
             
             self.quotes.append(quote)
         })
-        
+
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
         newQuote()
-
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
@@ -43,6 +42,8 @@ class QuotesViewController: UIViewController {
     func newQuote(){
         let myQuote = quotes[Int(arc4random_uniform(UInt32(quotes.count) ))]
         quoteLabel.text =  myQuote.quote
+//        print(myQuote.quoteID)
+
     }
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         newQuote()

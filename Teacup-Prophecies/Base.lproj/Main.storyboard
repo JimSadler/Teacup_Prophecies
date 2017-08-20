@@ -96,12 +96,12 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fE1-lz-3jF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1c-17-xeu">
-                                <rect key="frame" x="157" y="523" width="62" height="39"/>
+                                <rect key="frame" x="118" y="527" width="139" height="39"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Quote">
+                                <state key="normal" title="Tap for Quote">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -109,22 +109,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-ki-q63">
-                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <rect key="frame" x="37" y="89" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1t5-SZ-DAf"/>
-                                    <constraint firstAttribute="height" constant="300" id="5Aa-pk-KMu"/>
+                                    <constraint firstAttribute="height" constant="300" id="Eoa-DO-vIh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="91" placeholderIntrinsicHeight="45" image="teacup_final" translatesAutoresizingMaskIntoConstraints="NO" id="7Mk-Oa-CdC">
+                                <rect key="frame" x="135" y="428" width="105" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="Sgp-ZZ-GXO"/>
+                                    <constraint firstAttribute="height" constant="43" id="WDT-eW-OAz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.50588235294117645" green="0.61960784313725492" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="a1c-17-xeu" firstAttribute="top" secondItem="nSx-ki-q63" secondAttribute="bottom" constant="40" id="0PM-HA-BgM"/>
+                            <constraint firstItem="a1c-17-xeu" firstAttribute="top" secondItem="7Mk-Oa-CdC" secondAttribute="bottom" constant="56" id="7VF-0p-fdW"/>
                             <constraint firstItem="nSx-ki-q63" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="7jF-UZ-KW5"/>
                             <constraint firstItem="a1c-17-xeu" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="ELQ-aQ-ce0"/>
-                            <constraint firstItem="nSx-ki-q63" firstAttribute="centerY" secondItem="fE1-lz-3jF" secondAttribute="centerY" id="eFg-lK-ElV"/>
+                            <constraint firstItem="7Mk-Oa-CdC" firstAttribute="top" secondItem="nSx-ki-q63" secondAttribute="bottom" constant="39" id="YKX-SW-5OD"/>
+                            <constraint firstItem="7Mk-Oa-CdC" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="h83-jK-zZl"/>
+                            <constraint firstItem="nSx-ki-q63" firstAttribute="top" secondItem="PER-i4-TH3" secondAttribute="bottom" constant="25" id="y9p-6O-duJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oXs-l4-43C">
@@ -140,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSj-nP-AMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1497" y="128"/>
+            <point key="canvasLocation" x="1496.8" y="127.28635682158921"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bhp-Cw-q9h">
@@ -161,4 +170,7 @@
             <point key="canvasLocation" x="780.79999999999995" y="128.63568215892056"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="teacup_final" width="255" height="198"/>
+    </resources>
 </document>
