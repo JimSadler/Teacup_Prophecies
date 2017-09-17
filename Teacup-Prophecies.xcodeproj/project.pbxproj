@@ -31,6 +31,7 @@
 		36083D7C1EEDABC20036E770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36083D821EEDAC680036E770 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36083D8A1EEE042D0036E770 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		369E7C251F69BFB2008E996C /* Teacup-Prophecies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Teacup-Prophecies.entitlements"; sourceTree = "<group>"; };
 		36CEC88A1F0BF50C00D13EDE /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teacup-Prophecies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies.release.xcconfig"; sourceTree = "<group>"; };
 		A93DEF45B64D1766CDC95A90 /* Pods_Teacup_Prophecies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teacup_Prophecies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +79,7 @@
 		36083D6C1EEDABC20036E770 /* Teacup-Prophecies */ = {
 			isa = PBXGroup;
 			children = (
+				369E7C251F69BFB2008E996C /* Teacup-Prophecies.entitlements */,
 				367118FB1F12864F00224916 /* Models */,
 				367118FA1F12862700224916 /* ViewControllers */,
 				36083D6D1EEDABC20036E770 /* AppDelegate.swift */,
@@ -151,6 +153,11 @@
 				TargetAttributes = {
 					36083D691EEDABC20036E770 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -377,13 +384,27 @@
 			baseConfigurationReference = 08035266F5349A492235464B /* Pods-Teacup-Prophecies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Teacup-Prophecies/Teacup-Prophecies.entitlements";
 				DEVELOPMENT_TEAM = S2HT9D8CTZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+				);
 				INFOPLIST_FILE = "Teacup-Prophecies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.jimsadlerdevelopment.Teacup-Prophecies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				fake = "";
 			};
 			name = Debug;
 		};
@@ -392,13 +413,27 @@
 			baseConfigurationReference = 49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Teacup-Prophecies/Teacup-Prophecies.entitlements";
 				DEVELOPMENT_TEAM = S2HT9D8CTZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+				);
 				INFOPLIST_FILE = "Teacup-Prophecies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.jimsadlerdevelopment.Teacup-Prophecies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				fake = "";
 			};
 			name = Release;
 		};

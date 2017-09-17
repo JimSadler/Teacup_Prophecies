@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
+import FirebaseAuth
+import FBSDKCoreKit
 
 class QuotesViewController: UIViewController {
     
@@ -34,10 +37,24 @@ class QuotesViewController: UIViewController {
         newQuote()
     }
     
-    @IBAction func logoutTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+   
+    @IBAction func didTappedLogout(_ sender: Any) {
+        // sign user out of firebase
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
         
+        // sign user out of Facebook
+        FBSDKAccessToken.setCurrent(nil)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let SignInViewController: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginView")
+        
+        self.present(SignInViewController, animated: true, completion: nil)
     }
+    
     
     func newQuote(){
         let myQuote = quotes[Int(arc4random_uniform(UInt32(quotes.count) ))]
