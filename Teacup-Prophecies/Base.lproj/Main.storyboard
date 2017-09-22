@@ -100,6 +100,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1c-17-xeu">
                                 <rect key="frame" x="118" y="533" width="139" height="39"/>
+                                <accessibility key="accessibilityConfiguration" label="Tap for Prophecy"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
                                 <state key="normal" title="Tap for Quote">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,6 +111,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-ki-q63">
                                 <rect key="frame" x="37" y="118" width="300" height="300"/>
+                                <accessibility key="accessibilityConfiguration" label="Quote"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1t5-SZ-DAf"/>
                                     <constraint firstAttribute="height" constant="300" id="Eoa-DO-vIh"/>

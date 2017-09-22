@@ -14,20 +14,22 @@ import FBSDKShareKit
 
 class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
     let loginButton = FBSDKLoginButton()
-
+    
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         self.loginButton.isHidden = true
         super.viewDidLoad()
         Auth.auth().addStateDidChangeListener { (auth, user) in
-            if let user = user {
+            if user != nil {
                 // user is signed on
                 // move ther user to the quotes view controller
-                let mainStoryboard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-                let QuotesViewController: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "QuoteView")
+                //                let mainStoryboard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+                //                let QuotesViewController: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "QuoteView")
+                //
+                //                self.present(QuotesViewController, animated: true, completion: nil)
+                self.performSegue(withIdentifier: "signInSegue", sender: nil)
                 
-                self.present(QuotesViewController, animated: true, completion: nil)
             } else {
                 //no user is signed in.
                 // show the user the login button
@@ -40,11 +42,11 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
             
         }
-
+        
         // Do any additional setup after loading the view, typically from a nib.
-//        let loginButton = FBSDKLoginButton()
-       
-       
+        //        let loginButton = FBSDKLoginButton()
+        
+        
         
         
     }
@@ -60,19 +62,15 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
         let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
         Auth.auth().signIn(with: credential) { (user, error) in
             print("User logged in...")
-
-//            if let error = error {
-//                return
-//            }
-            // User is signed in
-            //         }
+            self.performSegue(withIdentifier: "signInSegue", sender: nil)
+            
+            
+        }
+        
     }
-    self.performSegue(withIdentifier: "signInSegue", sender: nil)
-
-    }
-
-  
-
+    
+    
+    
     @IBAction func signInTapped(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             print("We tried to sign in")
@@ -99,17 +97,17 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
     }
     
-//    func goToNavigation() {
-//        // Creating a navigation controller with MainMenuViewController at the root of the navigation stack.
-//        let navController = UINavigationController(rootViewController: QuotesViewController())
-//        self.present(navController, animated:true, completion: nil)
-//    }
-//    func checkLogIn() {
-//        if (FBSDKAccessToken.current() != nil) {
-//            // User is already logged in, do work such as go to next view controller.
-//            self.goToNavigation()
-//        }
-//
-//    }
+    //    func goToNavigation() {
+    //        // Creating a navigation controller with MainMenuViewController at the root of the navigation stack.
+    //        let navController = UINavigationController(rootViewController: QuotesViewController())
+    //        self.present(navController, animated:true, completion: nil)
+    //    }
+    //    func checkLogIn() {
+    //        if (FBSDKAccessToken.current() != nil) {
+    //            // User is already logged in, do work such as go to next view controller.
+    //            self.goToNavigation()
+    //        }
+    //
+    //    }
 }
 
