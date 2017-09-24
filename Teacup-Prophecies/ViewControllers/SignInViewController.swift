@@ -27,7 +27,7 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
                 //                let mainStoryboard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
                 //                let QuotesViewController: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "QuoteView")
                 //
-                //                self.present(QuotesViewController, animated: true, completion: nil)
+//                                self.present(QuotesViewController, animated: true, completion: nil)
                 self.performSegue(withIdentifier: "signInSegue", sender: nil)
                 
             } else {
@@ -97,17 +97,6 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
     }
     
-    //    func goToNavigation() {
-    //        // Creating a navigation controller with MainMenuViewController at the root of the navigation stack.
-    //        let navController = UINavigationController(rootViewController: QuotesViewController())
-    //        self.present(navController, animated:true, completion: nil)
-    //    }
-    //    func checkLogIn() {
-    //        if (FBSDKAccessToken.current() != nil) {
-    //            // User is already logged in, do work such as go to next view controller.
-    //            self.goToNavigation()
-    //        }
-    //
-    //    }
+   
 }
 

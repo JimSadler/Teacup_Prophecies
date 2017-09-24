@@ -30,6 +30,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacup Prophecies Companion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dua-wZ-zxM">
                                 <rect key="frame" x="30" y="70" width="315.5" height="33"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -56,6 +59,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9As-7X-f8A">
                                 <rect key="frame" x="159.5" y="288" width="55" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Sign up">
+                                    <accessibilityTraits key="traits" button="YES" causesPageTurn="YES"/>
+                                </accessibility>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -99,11 +105,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1c-17-xeu">
-                                <rect key="frame" x="118" y="533" width="139" height="39"/>
-                                <accessibility key="accessibilityConfiguration" label="Tap for Prophecy"/>
+                                <rect key="frame" x="87.5" y="532" width="200" height="58"/>
+                                <accessibility key="accessibilityConfiguration" label="Tap for new Quote">
+                                    <accessibilityTraits key="traits" button="YES" header="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PrK-B8-r20"/>
+                                    <constraint firstAttribute="height" constant="58" id="wab-I1-uK5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
                                 <state key="normal" title="Tap for Quote">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="D3Y-Qe-HeW" eventType="touchUpInside" id="2ZM-x9-TWo"/>
@@ -111,17 +123,19 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-ki-q63">
                                 <rect key="frame" x="37" y="118" width="300" height="300"/>
-                                <accessibility key="accessibilityConfiguration" label="Quote"/>
+                                <accessibility key="accessibilityConfiguration" label="Quote">
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1t5-SZ-DAf"/>
                                     <constraint firstAttribute="height" constant="300" id="Eoa-DO-vIh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="91" placeholderIntrinsicHeight="45" image="teacup_final" translatesAutoresizingMaskIntoConstraints="NO" id="7Mk-Oa-CdC">
-                                <rect key="frame" x="135" y="457" width="105" height="43"/>
+                                <rect key="frame" x="135" y="468" width="105" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="Sgp-ZZ-GXO"/>
                                     <constraint firstAttribute="height" constant="43" id="WDT-eW-OAz"/>
@@ -130,10 +144,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.50588235294117645" green="0.61960784313725492" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="a1c-17-xeu" firstAttribute="top" secondItem="7Mk-Oa-CdC" secondAttribute="bottom" constant="33" id="7VF-0p-fdW"/>
+                            <constraint firstItem="a1c-17-xeu" firstAttribute="top" secondItem="7Mk-Oa-CdC" secondAttribute="bottom" constant="21" id="7VF-0p-fdW"/>
                             <constraint firstItem="nSx-ki-q63" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="7jF-UZ-KW5"/>
                             <constraint firstItem="a1c-17-xeu" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="ELQ-aQ-ce0"/>
-                            <constraint firstItem="7Mk-Oa-CdC" firstAttribute="top" secondItem="nSx-ki-q63" secondAttribute="bottom" constant="39" id="YKX-SW-5OD"/>
+                            <constraint firstItem="HQ9-jv-GPb" firstAttribute="top" secondItem="a1c-17-xeu" secondAttribute="bottom" constant="33" id="P0Y-Pd-wT6"/>
+                            <constraint firstItem="7Mk-Oa-CdC" firstAttribute="top" secondItem="nSx-ki-q63" secondAttribute="bottom" constant="50" id="YKX-SW-5OD"/>
                             <constraint firstItem="7Mk-Oa-CdC" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="h83-jK-zZl"/>
                             <constraint firstItem="nSx-ki-q63" firstAttribute="top" secondItem="PER-i4-TH3" secondAttribute="bottom" constant="54" id="y9p-6O-duJ"/>
                         </constraints>
@@ -143,6 +158,7 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="oXs-l4-43C">
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="Kaq-Zw-sXb">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="didTappedLogout:" destination="D3Y-Qe-HeW" id="mft-Kv-vLJ"/>
                             </connections>

@@ -30,7 +30,7 @@ class QuotesViewController: UIViewController {
             
             self.quotes.append(quote)
         })
-        
+        //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.quoteLabel.text);
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
@@ -59,6 +59,7 @@ class QuotesViewController: UIViewController {
     func newQuote(){
         let myQuote = quotes[Int(arc4random_uniform(UInt32(quotes.count) ))]
         quoteLabel.text =  myQuote.quote
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.quoteLabel.text);
         
     }
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
@@ -66,3 +67,4 @@ class QuotesViewController: UIViewController {
         
     }
 }
+
