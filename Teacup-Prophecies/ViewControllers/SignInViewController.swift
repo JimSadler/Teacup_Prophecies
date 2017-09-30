@@ -34,7 +34,7 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
                 //no user is signed in.
                 // show the user the login button
                 self.view.addSubview(self.loginButton)
-                self.loginButton.frame = CGRect(x: 16, y: 350, width: self.view.frame.width - 32, height: 50)
+                self.loginButton.frame = CGRect(x: 16, y: 370, width: self.view.frame.width - 32, height: 50)
                 self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
                 self.loginButton.delegate = self
                 

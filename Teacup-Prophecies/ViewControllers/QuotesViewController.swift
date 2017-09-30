@@ -15,8 +15,9 @@ import FBSDKCoreKit
 class QuotesViewController: UIViewController {
     
     
-    @IBOutlet weak var quoteLabel: UILabel!
-    
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var quoteLabel: UITextView!
+    quoteLabel.editable = NO;
     
     var quotes : [Quote] = []
     override func viewDidLoad() {
@@ -34,6 +35,7 @@ class QuotesViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
+//     
         newQuote()
     }
     
@@ -53,6 +55,20 @@ class QuotesViewController: UIViewController {
         let SignInViewController: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginView")
         
         self.present(SignInViewController, animated: true, completion: nil)
+        
+        
+    }
+    
+    func configureButton()
+    {
+        addButton.layer.cornerRadius = 0.5 * addButton.bounds.size.width
+        addButton.layer.borderColor = UIColor(red:242.0/255.0, green:214.0/255.0, blue:81.0/255.0, alpha:1).cgColor as CGColor
+        addButton.layer.borderWidth = 2.0
+        addButton.clipsToBounds = true
+    }
+    
+    override func viewDidLayoutSubviews() {
+        configureButton()
     }
     
     
