@@ -70,8 +70,9 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     
-    
     @IBAction func signInTapped(_ sender: Any) {
+       // let signIn = signInTapped(self)
+
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             print("We tried to sign in")
             if error != nil {
@@ -91,7 +92,13 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
                 
             } else {
                 print("signed in successfully")
-                self.performSegue(withIdentifier: "signInSegue", sender: nil)
+//                self.performSegue(withIdentifier: "signInSegue", sender: nil)
+//                self.view.addSubview(self.loginButton)
+//                self.signIn.frame = CGRect(x: 16, y: 370, width: self.view.frame.width - 32, height: 50)
+//                self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+//                self.loginButton.delegate = self
+//
+//                self.loginButton.isHidden = false
                 
             }
         }

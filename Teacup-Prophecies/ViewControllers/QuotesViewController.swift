@@ -16,9 +16,9 @@ class QuotesViewController: UIViewController {
     
     
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var quoteLabel: UITextView!
-    quoteLabel.editable = NO;
+    //@IBOutlet weak var quoteLabel: UITextView!
     
+    @IBOutlet weak var quoteLabel: UITextView!
     var quotes : [Quote] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,12 @@ class QuotesViewController: UIViewController {
     }
     
     
+    @IBAction func shareButton(_ sender: Any) {
+        let activityVC = UIActivityViewController(activityItems: [quoteLabel.text], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityVC, animated: true, completion: nil)
+    }
     @IBAction func didTappedLogout(_ sender: Any) {
         // sign user out of firebase
         let firebaseAuth = Auth.auth()
