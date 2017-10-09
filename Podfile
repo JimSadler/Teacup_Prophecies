@@ -13,5 +13,6 @@ pod ‘Firebase/Storage’
 pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
+#pod 'Bolts-Swift'
 
 end

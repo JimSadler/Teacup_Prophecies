@@ -81,7 +81,7 @@ class QuotesViewController: UIViewController {
     func newQuote(){
         let myQuote = quotes[Int(arc4random_uniform(UInt32(quotes.count) ))]
         quoteLabel.text =  myQuote.quote
-        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.quoteLabel.text);
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.quoteLabel);
         
     }
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
