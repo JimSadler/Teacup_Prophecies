@@ -22,6 +22,11 @@ class QuotesViewController: UIViewController {
     var quotes : [Quote] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.backgroundColor = .clear
+//        self.navigationController?.navigationBar.isTranslucent = true
+
         
         Database.database().reference().child("quotes").observe(DataEventType.childAdded, with: {(snapshot) in
             print(snapshot)
@@ -67,10 +72,13 @@ class QuotesViewController: UIViewController {
         
     }
     
+//    @IBAction func contactTapped(_ sender: Any) {
+//        self.present(ContactViewController, animated: true, completion: nil)
+//    }
     func configureButton()
     {
         addButton.layer.cornerRadius = 0.5 * addButton.bounds.size.width
-        addButton.layer.borderColor = UIColor(red:242.0/255.0, green:214.0/255.0, blue:81.0/255.0, alpha:1).cgColor as CGColor
+        addButton.layer.borderColor = UIColor(red:36/255.0, green:52/255.0, blue:74/255.0, alpha:1).cgColor as CGColor
         addButton.layer.borderWidth = 2.0
         addButton.clipsToBounds = true
     }
@@ -91,4 +99,5 @@ class QuotesViewController: UIViewController {
         
     }
 }
+//20C0D2   23C9D6 rgba(35, 201, 214, 1)
 

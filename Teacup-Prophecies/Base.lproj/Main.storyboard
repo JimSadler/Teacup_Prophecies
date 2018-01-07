@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SnellRoundhand.ttc">
-            <string>SnellRoundhand-Bold</string>
+        <array key="Noteworthy.ttc">
+            <string>Noteworthy-Light</string>
+        </array>
+        <array key="Savoye.ttc">
+            <string>SavoyeLetPlain</string>
         </array>
     </customFonts>
     <scenes>
@@ -18,50 +23,65 @@
             <objects>
                 <viewController storyboardIdentifier="LoginView" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Teacup_Prophecies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="MIJ-PO-Ivr"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dh-c5-bn5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-2413079_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jAe-Hk-dT8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ei-OX-sux">
+                                <rect key="frame" x="0.0" y="0.0" width="494" height="784"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="DXx-di-OZT">
+                                    <rect key="frame" x="0.0" y="0.0" width="494" height="784"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacup Prophecies Companion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dua-wZ-zxM">
-                                <rect key="frame" x="29.666666666666657" y="94" width="316" height="33"/>
+                                <rect key="frame" x="36" y="70" width="303" height="45.5"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                 </accessibility>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="38"/>
                                 <color key="textColor" red="0.0010905774111674704" green="0.0010905774111674704" blue="0.0010905774111674704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.95223252059658148" green="0.98090498096446699" blue="0.97490222170361596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="36"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohi-Lo-9G3" userLabel="Email">
-                                <rect key="frame" x="62.666666666666657" y="207" width="249.99999999999997" height="30"/>
+                                <rect key="frame" x="62.5" y="195.5" width="250" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="OxZ-Nm-i5D"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="OxZ-Nm-i5D"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ed-Pk-GU9">
-                                <rect key="frame" x="62.666666666666657" y="257" width="249.99999999999997" height="30"/>
+                                <rect key="frame" x="62.5" y="245.5" width="250" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="dRW-86-xrj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="dRW-86-xrj"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9As-7X-f8A">
-                                <rect key="frame" x="27.333333333333343" y="312" width="322" height="50"/>
-                                <color key="backgroundColor" red="0.94949635152284262" green="0.83770407972961192" blue="0.31898274100751978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="26.5" y="300.5" width="322" height="50"/>
                                 <accessibility key="accessibilityConfiguration" label="Sign up">
                                     <accessibilityTraits key="traits" button="YES" causesPageTurn="YES"/>
                                 </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7s7-0B-3ya"/>
-                                    <constraint firstAttribute="width" constant="322" id="G2F-ZI-JxH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="322" id="G2F-ZI-JxH"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="6" height="0.0"/>
                                 <state key="normal" title="Sign Up/ or Sign In">
@@ -77,14 +97,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.50588235294117645" green="0.61960784313725492" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ohi-Lo-9G3" firstAttribute="top" secondItem="dua-wZ-zxM" secondAttribute="bottom" constant="80" id="1kI-SH-42V"/>
                             <constraint firstItem="ohi-Lo-9G3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7zz-r7-X0g"/>
                             <constraint firstItem="2ed-Pk-GU9" firstAttribute="top" secondItem="ohi-Lo-9G3" secondAttribute="bottom" constant="20" id="Ehn-3K-eQb"/>
                             <constraint firstItem="2ed-Pk-GU9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J2o-mL-942"/>
                             <constraint firstItem="9As-7X-f8A" firstAttribute="top" secondItem="2ed-Pk-GU9" secondAttribute="bottom" constant="25" id="Ugs-zW-AnI"/>
-                            <constraint firstItem="dua-wZ-zxM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="dqO-Ro-aLO"/>
+                            <constraint firstItem="dua-wZ-zxM" firstAttribute="top" secondItem="MIJ-PO-Ivr" secondAttribute="bottom" constant="50" id="dqO-Ro-aLO"/>
                             <constraint firstItem="9As-7X-f8A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntg-qi-EOv"/>
                             <constraint firstItem="9As-7X-f8A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oae-jc-r9B"/>
                             <constraint firstItem="dua-wZ-zxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uec-KV-pWo"/>
@@ -98,55 +117,140 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146" y="127"/>
+            <point key="canvasLocation" x="-149.27536231884059" y="125.54347826086958"/>
         </scene>
         <!--Quotes View Controller-->
         <scene sceneID="rV9-7T-96O">
             <objects>
                 <viewController storyboardIdentifier="QuoteView" automaticallyAdjustsScrollViewInsets="NO" id="D3Y-Qe-HeW" customClass="QuotesViewController" customModule="Teacup_Prophecies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PER-i4-TH3"/>
-                        <viewControllerLayoutGuide type="bottom" id="HQ9-jv-GPb"/>
+                        <viewControllerLayoutGuide type="top" id="or4-0V-cfZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="x77-LJ-bbz"/>
                     </layoutGuides>
-                    <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fE1-lz-3jF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fE1-lz-3jF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote for the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wq-yH-Gcr">
-                                <rect key="frame" x="78" y="113" width="219" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-2413079_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1M4-o5-olV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFp-Cx-R9R">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="SpR-fM-6J9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wq-yH-Gcr">
+                                <rect key="frame" x="78" y="91" width="219" height="33.5"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="We3-MJ-Dt0"/>
-                                    <constraint firstAttribute="width" constant="219" id="t9R-cM-Yub"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="We3-MJ-Dt0">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="29"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="219" id="t9R-cM-Yub"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Quote for the Day">
+                                        <attributes>
+                                            <font key="NSFont" size="33" name="SavoyeLetPlain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" headerLevel="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <attributedString key="attributedText">
+                                        <fragment content="Quote for the Day">
+                                            <attributes>
+                                                <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" headerLevel="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </variation>
+                                <variation key="displayGamut=P3-heightClass=regular-widthClass=compact">
+                                    <attributedString key="attributedText">
+                                        <fragment content="Quote for the Day">
+                                            <attributes>
+                                                <font key="NSFont" size="31" name="SavoyeLetPlain"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" headerLevel="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-Kq-wTc">
-                                <rect key="frame" x="35" y="154.66666666666663" width="305" height="393"/>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="247" ambiguous="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-Kq-wTc">
+                                <rect key="frame" x="43.5" y="120.66666666666674" width="288" height="184"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="393" id="4PV-1b-MgS"/>
-                                    <constraint firstAttribute="width" constant="305" id="mnb-8H-uDA"/>
+                                    <constraint firstAttribute="height" constant="320" id="4PV-1b-MgS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Orw-0a-N34"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="jCJ-L1-8dz"/>
+                                    <constraint firstAttribute="width" constant="325" id="mnb-8H-uDA">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="280"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="335"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="288" id="xAa-uo-OsF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="333"/>
+                                    </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Orw-0a-N34"/>
+                                        <exclude reference="jCJ-L1-8dz"/>
+                                        <exclude reference="xAa-uo-OsF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="4PV-1b-MgS"/>
+                                        <exclude reference="mnb-8H-uDA"/>
+                                        <include reference="xAa-uo-OsF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Orw-0a-N34"/>
+                                        <include reference="jCJ-L1-8dz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <mask key="constraints">
+                                        <exclude reference="Orw-0a-N34"/>
+                                        <exclude reference="jCJ-L1-8dz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="displayGamut=sRGB-heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="19"/>
+                                </variation>
                             </textView>
                             <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="239" horizontalCompressionResistancePriority="745" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1c-17-xeu" customClass="myBtn">
-                                <rect key="frame" x="150" y="584.66666666666663" width="75" height="75"/>
+                                <rect key="frame" x="155" y="576" width="65" height="65"/>
                                 <accessibility key="accessibilityConfiguration" label="Tap for new Quote">
                                     <accessibilityTraits key="traits" button="YES" header="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Hhc-F7-L7d"/>
-                                    <constraint firstAttribute="height" constant="75" id="KwV-Mb-SdW"/>
+                                    <constraint firstAttribute="width" constant="65" id="Hhc-F7-L7d"/>
+                                    <constraint firstAttribute="height" constant="65" id="KwV-Mb-SdW"/>
                                 </constraints>
-                                <color key="tintColor" red="0.30980392159999998" green="0.3411764706" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="teacup_button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -154,34 +258,41 @@
                                     <action selector="buttonTapped:" destination="D3Y-Qe-HeW" eventType="touchUpInside" id="2ZM-x9-TWo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoL-Gh-DUj">
-                                <rect key="frame" x="153" y="669.66666666666663" width="69" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="TWK-87-zQi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.50588235294117645" green="0.61960784313725492" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.30980392159999998" green="0.3411764706" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qoL-Gh-DUj" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="0fY-EV-AR2"/>
-                            <constraint firstItem="odZ-Kq-wTc" firstAttribute="top" secondItem="0wq-yH-Gcr" secondAttribute="bottom" constant="20.666667938232422" id="DyT-2y-X8K"/>
+                            <constraint firstItem="0wq-yH-Gcr" firstAttribute="top" secondItem="or4-0V-cfZ" secondAttribute="bottom" constant="27" id="7as-Of-YU5"/>
                             <constraint firstItem="a1c-17-xeu" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="ELQ-aQ-ce0"/>
+                            <constraint firstItem="odZ-Kq-wTc" firstAttribute="height" relation="greaterThanOrEqual" secondItem="fE1-lz-3jF" secondAttribute="width" id="GLx-HU-61T">
+                                <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                            </constraint>
                             <constraint firstItem="0wq-yH-Gcr" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="I0Y-V6-VmP"/>
+                            <constraint firstItem="x77-LJ-bbz" firstAttribute="top" secondItem="a1c-17-xeu" secondAttribute="bottom" constant="26" id="JCS-5I-sPm"/>
                             <constraint firstItem="0wq-yH-Gcr" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="Rc8-U4-MZk"/>
-                            <constraint firstItem="qoL-Gh-DUj" firstAttribute="top" secondItem="a1c-17-xeu" secondAttribute="bottom" constant="10" id="WFY-Lp-fzr"/>
-                            <constraint firstItem="0wq-yH-Gcr" firstAttribute="top" secondItem="PER-i4-TH3" secondAttribute="bottom" constant="25" id="g6R-iI-vxS"/>
-                            <constraint firstItem="HQ9-jv-GPb" firstAttribute="top" secondItem="qoL-Gh-DUj" secondAttribute="bottom" constant="37.333332061767578" id="ke5-Hl-wOy"/>
-                            <constraint firstItem="a1c-17-xeu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="odZ-Kq-wTc" secondAttribute="bottom" constant="30" id="r6o-QS-aYY"/>
+                            <constraint firstItem="odZ-Kq-wTc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0wq-yH-Gcr" secondAttribute="bottom" constant="11.666664123535156" id="UCk-Zg-sry"/>
+                            <constraint firstItem="a1c-17-xeu" firstAttribute="bottom" secondItem="x77-LJ-bbz" secondAttribute="top" constant="-36" id="eq9-WZ-KQg"/>
+                            <constraint firstItem="0wq-yH-Gcr" firstAttribute="top" secondItem="or4-0V-cfZ" secondAttribute="bottom" constant="25" id="g6R-iI-vxS"/>
                             <constraint firstItem="odZ-Kq-wTc" firstAttribute="centerX" secondItem="fE1-lz-3jF" secondAttribute="centerX" id="wJA-Ab-XiG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7as-Of-YU5"/>
+                                <exclude reference="GLx-HU-61T"/>
+                                <exclude reference="JCS-5I-sPm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="7as-Of-YU5"/>
+                                <exclude reference="Rc8-U4-MZk"/>
+                                <exclude reference="g6R-iI-vxS"/>
+                                <include reference="GLx-HU-61T"/>
+                                <exclude reference="eq9-WZ-KQg"/>
+                                <include reference="JCS-5I-sPm"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem id="uBr-66-zts"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="oXs-l4-43C">
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="Kaq-Zw-sXb">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -189,15 +300,26 @@
                                 <action selector="didTappedLogout:" destination="D3Y-Qe-HeW" id="mft-Kv-vLJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="FB7-jV-4CH">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="shareButton:" destination="D3Y-Qe-HeW" id="oY8-tb-IOm"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Contact" id="MMK-Gn-hR4">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="contactTapped:" destination="D3Y-Qe-HeW" id="QhO-3d-LZI"/>
+                                    <segue destination="lDV-qu-EEI" kind="show" id="ljo-70-G94"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="action" id="FB7-jV-4CH">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="D3Y-Qe-HeW" id="oY8-tb-IOm"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addButton" destination="a1c-17-xeu" id="dTe-z1-E4W"/>
                         <outlet property="quoteLabel" destination="odZ-Kq-wTc" id="HeV-IB-vOb"/>
@@ -205,7 +327,136 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSj-nP-AMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496.8" y="127.09359605911331"/>
+            <point key="canvasLocation" x="1494.2028985507247" y="125.54347826086958"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="Wnq-Tz-sqk">
+            <objects>
+                <viewController id="lDV-qu-EEI" customClass="ContactViewController" customModule="Teacup_Prophecies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cg9-1w-5m0"/>
+                        <viewControllerLayoutGuide type="bottom" id="fvc-DW-am9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XS6-3Q-Uxd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-2413079_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V33-8A-4po">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="825"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSJ-AC-Doa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="825"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="7MM-rC-4aa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="825"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aec-7T-XpS">
+                                <rect key="frame" x="136.5" y="92" width="102" height="29"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                </accessibility>
+                                <attributedString key="attributedText">
+                                    <fragment content="Contact Martha">
+                                        <attributes>
+                                            <font key="NSFont" size="33" name="SavoyeLetPlain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" headerLevel="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <attributedString key="attributedText">
+                                        <fragment content="Contact Martha">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="SavoyeLetPlain"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" headerLevel="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </variation>
+                            </label>
+                            <textView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" contentInsetAdjustmentBehavior="never" delaysContentTouches="NO" canCancelContentTouches="NO" keyboardDismissMode="interactive" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGL-eU-a2K">
+                                <rect key="frame" x="27.5" y="136" width="320" height="229"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="422" id="LfQ-F1-NIE">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="229"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="320" id="NDK-BM-F64"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">To go to Martha's website, interact with Martha, and investigate more wonderful offerings, please click below.  On Martha's website, you'll learn about Martha's radio shows, hear about Martha's remarkable process of healing called "The Burgess Process", read about other healers she has trained, enjoy Martha's blogs, and hear free audio recordings.  
+
+If you choose to purchase Martha's books, The Life You Want and The Teacup Prophecies, you may be connected to Amazon through this site as well.
+
+Life is a journey.  Let's make it a good one!</mutableString>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.98405685426589329" green="0.97838600564388978" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="Noteworthy-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                                <variation key="heightClass=regular-widthClass=compact" preservesSuperviewLayoutMargins="YES">
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <mutableString key="content">To go to Martha's website, interact with Martha, and investigate more wonderful offerings, please click below.  On Martha's website, you'll learn about Martha's radio shows, hear about Martha's remarkable process of healing called "The Burgess Process", read about other healers she has trained, enjoy Martha's blogs, and hear free audio recordings.  
+
+If you choose to purchase Martha's books, The Life You Want and The Teacup Prophecies, you may be connected to Amazon through this site as well.
+
+Life is a journey.  Let's make it a good one!</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="0.98405685426589329" green="0.97838600564388978" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="11" name="Noteworthy-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omu-Nh-jtd">
+                                <rect key="frame" x="149.5" y="405" width="76" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="To go to Martha's website, interact with Martha, and investigate more wonderful offerings. ">
+                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                </accessibility>
+                                <state key="normal" title="To Website"/>
+                                <connections>
+                                    <action selector="websiteButtTapped:" destination="lDV-qu-EEI" eventType="touchUpInside" id="uo1-Zg-9jf"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-ps-6wY">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem id="f01-2h-yYW"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aec-7T-XpS" firstAttribute="centerX" secondItem="XS6-3Q-Uxd" secondAttribute="centerX" id="FiD-zn-PcR"/>
+                            <constraint firstItem="aGL-eU-a2K" firstAttribute="centerX" secondItem="XS6-3Q-Uxd" secondAttribute="centerX" id="Q8G-z5-Dcz"/>
+                            <constraint firstItem="Aec-7T-XpS" firstAttribute="top" secondItem="Cg9-1w-5m0" secondAttribute="bottom" constant="28" id="ZNg-R9-wEe"/>
+                            <constraint firstItem="Omu-Nh-jtd" firstAttribute="top" secondItem="aGL-eU-a2K" secondAttribute="bottom" constant="40" id="sQe-Km-fCI"/>
+                            <constraint firstItem="aGL-eU-a2K" firstAttribute="top" secondItem="Aec-7T-XpS" secondAttribute="bottom" constant="15" id="stb-1Y-Y9p"/>
+                            <constraint firstItem="Omu-Nh-jtd" firstAttribute="centerX" secondItem="XS6-3Q-Uxd" secondAttribute="centerX" id="xhn-5l-dCK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzY-5w-tBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="124.8768472906404"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bhp-Cw-q9h">
@@ -213,7 +464,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WeZ-Gf-y8s" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4LY-kd-fb3">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -227,6 +478,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background-2413079_1920.jpg" width="1920" height="1280"/>
         <image name="teacup_button" width="75" height="75"/>
     </resources>
 </document>
