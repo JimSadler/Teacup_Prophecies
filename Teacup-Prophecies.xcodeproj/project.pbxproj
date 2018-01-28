@@ -17,12 +17,45 @@
 		36083D831EEDAC690036E770 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36083D821EEDAC680036E770 /* GoogleService-Info.plist */; };
 		36083D8B1EEE042D0036E770 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36083D8A1EEE042D0036E770 /* QuotesViewController.swift */; };
 		3653000E1FB24428007A9735 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653000D1FB24428007A9735 /* ContactViewController.swift */; };
+		36694782201E252000D77D8B /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36694783201E252000D77D8B /* GoogleToolboxForMac.framework */; };
+		36694784201E252500D77D8B /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36694785201E252500D77D8B /* GTMSessionFetcher.framework */; };
+		36694791201E2D7200D77D8B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669478E201E2D7200D77D8B /* FBSDKCoreKit.framework */; };
+		36694792201E2D7200D77D8B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669478F201E2D7200D77D8B /* FBSDKLoginKit.framework */; };
+		36694793201E2D7200D77D8B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36694790201E2D7200D77D8B /* FBSDKShareKit.framework */; };
+		3669479B201E30C200D77D8B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669479A201E30C200D77D8B /* NotificationService.swift */; };
+		3669479F201E30C200D77D8B /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36694798201E30C100D77D8B /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3690A6121FA622B1007F9ED8 /* background-2413079_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3690A6111FA622B1007F9ED8 /* background-2413079_1920.jpg */; };
 		36CEC88B1F0BF50C00D13EDE /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CEC88A1F0BF50C00D13EDE /* Quotes.swift */; };
+		B53CA72CAD1094B4D2E872B3 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A96BEF6282621194AA7A21F /* Pods_OneSignalNotificationServiceExtension.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3669479D201E30C200D77D8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36083D621EEDABC20036E770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36694797201E30C100D77D8B;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		366947A3201E30C200D77D8B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3669479F201E30C200D77D8B /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08035266F5349A492235464B /* Pods-Teacup-Prophecies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teacup-Prophecies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies.debug.xcconfig"; sourceTree = "<group>"; };
+		2A96BEF6282621194AA7A21F /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36083D6A1EEDABC20036E770 /* Teacup-Prophecies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teacup-Prophecies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36083D6D1EEDABC20036E770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36083D6F1EEDABC20036E770 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -34,11 +67,21 @@
 		36083D821EEDAC680036E770 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36083D8A1EEE042D0036E770 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		3653000D1FB24428007A9735 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		36694783201E252000D77D8B /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36694785201E252500D77D8B /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3669478E201E2D7200D77D8B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		3669478F201E2D7200D77D8B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		36694790201E2D7200D77D8B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		36694798201E30C100D77D8B /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3669479A201E30C200D77D8B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		3669479C201E30C200D77D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3690A6111FA622B1007F9ED8 /* background-2413079_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-2413079_1920.jpg"; sourceTree = "<group>"; };
 		369E7C251F69BFB2008E996C /* Teacup-Prophecies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Teacup-Prophecies.entitlements"; sourceTree = "<group>"; };
 		36CEC88A1F0BF50C00D13EDE /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teacup-Prophecies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies.release.xcconfig"; sourceTree = "<group>"; };
+		6B4E30B23B143917D4434C13 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		A93DEF45B64D1766CDC95A90 /* Pods_Teacup_Prophecies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teacup_Prophecies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC36BAB5BD1731B101371AE /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +89,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36694784201E252500D77D8B /* GTMSessionFetcher.framework in Frameworks */,
+				36694791201E2D7200D77D8B /* FBSDKCoreKit.framework in Frameworks */,
+				36694793201E2D7200D77D8B /* FBSDKShareKit.framework in Frameworks */,
+				36694792201E2D7200D77D8B /* FBSDKLoginKit.framework in Frameworks */,
+				36694782201E252000D77D8B /* GoogleToolboxForMac.framework in Frameworks */,
 				0ABA7786C9A382D30293B9A8 /* Pods_Teacup_Prophecies.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36694795201E30C100D77D8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53CA72CAD1094B4D2E872B3 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +114,8 @@
 			children = (
 				08035266F5349A492235464B /* Pods-Teacup-Prophecies.debug.xcconfig */,
 				49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */,
+				6B4E30B23B143917D4434C13 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				ACC36BAB5BD1731B101371AE /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -66,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				36083D6C1EEDABC20036E770 /* Teacup-Prophecies */,
+				36694799201E30C100D77D8B /* OneSignalNotificationServiceExtension */,
 				36083D6B1EEDABC20036E770 /* Products */,
 				1BB0A7BECF18FA907B05B2AA /* Pods */,
 				E98EB09FE38CA6FEEADA14B5 /* Frameworks */,
@@ -76,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				36083D6A1EEDABC20036E770 /* Teacup-Prophecies.app */,
+				36694798201E30C100D77D8B /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +156,15 @@
 				36083D741EEDABC20036E770 /* Teacup_Prophecies.xcdatamodeld */,
 			);
 			path = "Teacup-Prophecies";
+			sourceTree = "<group>";
+		};
+		36694799201E30C100D77D8B /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3669479A201E30C200D77D8B /* NotificationService.swift */,
+				3669479C201E30C200D77D8B /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		367118FA1F12862700224916 /* ViewControllers */ = {
@@ -119,7 +188,13 @@
 		E98EB09FE38CA6FEEADA14B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3669478E201E2D7200D77D8B /* FBSDKCoreKit.framework */,
+				3669478F201E2D7200D77D8B /* FBSDKLoginKit.framework */,
+				36694790201E2D7200D77D8B /* FBSDKShareKit.framework */,
+				36694785201E252500D77D8B /* GTMSessionFetcher.framework */,
+				36694783201E252000D77D8B /* GoogleToolboxForMac.framework */,
 				A93DEF45B64D1766CDC95A90 /* Pods_Teacup_Prophecies.framework */,
+				2A96BEF6282621194AA7A21F /* Pods_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,15 +212,36 @@
 				36083D681EEDABC20036E770 /* Resources */,
 				208AE311F2D6B9221C64538E /* [CP] Embed Pods Frameworks */,
 				EA294041F92207E987425BF5 /* [CP] Copy Pods Resources */,
+				366947A3201E30C200D77D8B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3669479E201E30C200D77D8B /* PBXTargetDependency */,
 			);
 			name = "Teacup-Prophecies";
 			productName = "Teacup-Prophecies";
 			productReference = 36083D6A1EEDABC20036E770 /* Teacup-Prophecies.app */;
 			productType = "com.apple.product-type.application";
+		};
+		36694797201E30C100D77D8B /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 366947A0201E30C200D77D8B /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				0B7AC40EA3981BCB0AC0F5F6 /* [CP] Check Pods Manifest.lock */,
+				36694794201E30C100D77D8B /* Sources */,
+				36694795201E30C100D77D8B /* Frameworks */,
+				36694796201E30C100D77D8B /* Resources */,
+				6E0636D07ED23E1E3E3B1B65 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 36694798201E30C100D77D8B /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,7 +249,7 @@
 		36083D621EEDABC20036E770 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "JS Development";
 				TargetAttributes = {
@@ -168,6 +264,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					36694797201E30C100D77D8B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -185,6 +285,7 @@
 			projectRoot = "";
 			targets = (
 				36083D691EEDABC20036E770 /* Teacup-Prophecies */,
+				36694797201E30C100D77D8B /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -202,22 +303,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36694796201E30C100D77D8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B7AC40EA3981BCB0AC0F5F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		208AE311F2D6B9221C64538E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teacup-Prophecies/Pods-Teacup-Prophecies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E0636D07ED23E1E3E3B1B65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7B3565B60B4D414BABA6133D /* [CP] Check Pods Manifest.lock */ = {
@@ -226,13 +380,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teacup-Prophecies-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA294041F92207E987425BF5 /* [CP] Copy Pods Resources */ = {
@@ -266,7 +423,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36694794201E30C100D77D8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3669479B201E30C200D77D8B /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3669479E201E30C200D77D8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36694797201E30C100D77D8B /* OneSignalNotificationServiceExtension */;
+			targetProxy = 3669479D201E30C200D77D8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		36083D711EEDABC20036E770 /* Main.storyboard */ = {
@@ -403,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08035266F5349A492235464B /* Pods-Teacup-Prophecies.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Teacup-Prophecies/Teacup-Prophecies.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -410,6 +584,22 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSM32EB95C;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"\"${PODS_ROOT}/Bolts\"",
+					"\"${PODS_ROOT}/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/FBSDKShareKit\"",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
@@ -430,6 +620,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";
 				SWIFT_VERSION = 4.0;
+				"SYSTEM_FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				fake = "";
 			};
@@ -439,6 +630,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49D6D55FA211F7D35B4D2E58 /* Pods-Teacup-Prophecies.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Teacup-Prophecies/Teacup-Prophecies.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -455,6 +647,7 @@
 					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
 					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
 					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Teacup-Prophecies/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -467,6 +660,44 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				fake = "";
+			};
+			name = Release;
+		};
+		366947A1201E30C200D77D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4E30B23B143917D4434C13 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSM32EB95C;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.marthaburgessnovak.TeacupProphecies.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		366947A2201E30C200D77D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC36BAB5BD1731B101371AE /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSM32EB95C;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.marthaburgessnovak.TeacupProphecies.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -487,6 +718,15 @@
 			buildConfigurations = (
 				36083D801EEDABC20036E770 /* Debug */,
 				36083D811EEDABC20036E770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		366947A0201E30C200D77D8B /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366947A1201E30C200D77D8B /* Debug */,
+				366947A2201E30C200D77D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

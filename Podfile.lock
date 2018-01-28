@@ -1,16 +1,16 @@
 PODS:
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
-  - FBSDKCoreKit (4.22.1):
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.30.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.22.1):
+  - FBSDKLoginKit (4.30.0):
     - FBSDKCoreKit
-  - FBSDKShareKit (4.22.1):
-    - FBSDKCoreKit
+  - FBSDKShareKit (4.30.0):
+    - FBSDKCoreKit (~> 4.30.0)
   - Firebase/Auth (4.0.0):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
@@ -52,6 +52,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
+  - OneSignal (2.6.2)
 
 DEPENDENCIES:
   - FBSDKCoreKit
@@ -61,12 +62,13 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - OneSignal (< 3.0, >= 2.6.2)
 
 SPEC CHECKSUMS:
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  FBSDKCoreKit: 9c2daf0162214d6d2e21cf8208a9c6c2a2e42b9c
-  FBSDKLoginKit: 00cf28916b9f0169763a3d61985d745b579fe304
-  FBSDKShareKit: 1cbd0fdc2bb3277dd3522512855dcf1f4088f734
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 7c4bba2877781a131ab5d54c0a78c405d4307b62
+  FBSDKLoginKit: fe7a7e82373dc5daad92e1623219e86224ab1fb1
+  FBSDKShareKit: a9427574b51bde4f437262c3f118c4ccfddeef6c
   Firebase: 284eea779b73fdff309791817da7c68bff8dd572
   FirebaseAnalytics: 6f08e746f7d66f5452931bc2e822b5df9c66b64a
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
@@ -76,7 +78,8 @@ SPEC CHECKSUMS:
   FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  OneSignal: 95127bce89b9e495079e7205e3d47c88590b5750
 
-PODFILE CHECKSUM: 0d5b887d7c3b6701089e0d82c7e22fd2b824e5e6
+PODFILE CHECKSUM: 90ffde65f56019ab72096875dcb405d2c8dc0bac
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0

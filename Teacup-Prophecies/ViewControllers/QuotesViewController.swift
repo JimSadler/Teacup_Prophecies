@@ -35,7 +35,7 @@ class QuotesViewController: UIViewController {
             quote.quote = (snapshot.value! as! NSDictionary)["quote"] as! String
             
             self.quotes.append(quote)
-            self.newQuote()
+//            self.newQuote()
 
         })
         //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.quoteLabel.text);

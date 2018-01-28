@@ -83,6 +83,7 @@
                                     <constraint firstAttribute="height" constant="50" id="7s7-0B-3ya"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="322" id="G2F-ZI-JxH"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                 <size key="titleShadowOffset" width="6" height="0.0"/>
                                 <state key="normal" title="Sign Up/ or Sign In">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -355,7 +356,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aec-7T-XpS">
-                                <rect key="frame" x="136.5" y="92" width="102" height="29"/>
+                                <rect key="frame" x="132.5" y="92" width="110.5" height="31"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                 </accessibility>
@@ -372,7 +373,7 @@
                                     <attributedString key="attributedText">
                                         <fragment content="Contact Martha">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="SavoyeLetPlain"/>
+                                                <font key="NSFont" size="26" name="SavoyeLetPlain"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" headerLevel="1"/>
                                             </attributes>
                                         </fragment>
@@ -380,7 +381,7 @@
                                 </variation>
                             </label>
                             <textView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" contentInsetAdjustmentBehavior="never" delaysContentTouches="NO" canCancelContentTouches="NO" keyboardDismissMode="interactive" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGL-eU-a2K">
-                                <rect key="frame" x="27.5" y="136" width="320" height="229"/>
+                                <rect key="frame" x="27.5" y="138" width="320" height="229"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -417,7 +418,7 @@ If you choose to purchase Martha's books, The Life You Want and The Teacup Proph
 Life is a journey.  Let's make it a good one!</mutableString>
                                             <attributes>
                                                 <color key="NSBackgroundColor" red="0.98405685426589329" green="0.97838600564388978" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="11" name="Noteworthy-Light"/>
+                                                <font key="NSFont" size="13" name="Noteworthy-Light"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -425,11 +426,14 @@ Life is a journey.  Let's make it a good one!</mutableString>
                                 </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omu-Nh-jtd">
-                                <rect key="frame" x="149.5" y="405" width="76" height="30"/>
+                                <rect key="frame" x="151.5" y="407" width="72" height="41"/>
                                 <accessibility key="accessibilityConfiguration" hint="To go to Martha's website, interact with Martha, and investigate more wonderful offerings. ">
                                     <accessibilityTraits key="traits" button="YES" link="YES"/>
                                 </accessibility>
-                                <state key="normal" title="To Website"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                <state key="normal" title="To Website">
+                                    <color key="titleColor" red="0.9494963515" green="0.81486743530000005" blue="0.23918937539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="websiteButtTapped:" destination="lDV-qu-EEI" eventType="touchUpInside" id="uo1-Zg-9jf"/>
                                 </connections>

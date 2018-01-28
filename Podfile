@@ -11,8 +11,11 @@ pod ‘Firebase/Auth’
 pod ‘Firebase/Database’
 pod ‘Firebase/Storage’
 pod 'FBSDKCoreKit'
-pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
-#pod 'Bolts-Swift'
-
+pod 'FBSDKShareKit'
+pod 'OneSignal', '>= 2.6.2', '< 3.0'
+end
+use_frameworks!
+target 'OneSignalNotificationServiceExtension' do
+    pod 'OneSignal', '>= 2.6.2', '< 3.0'
 end
